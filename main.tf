@@ -8,6 +8,10 @@ terraform {
   }
 }
 
+provider "aws" {
+  region = "us-east-1"
+}
+
 # Define variables for customization
 variable "vpc_id" {
   type = string
